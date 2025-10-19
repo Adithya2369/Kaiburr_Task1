@@ -1,0 +1,96 @@
+README
+task1
+|   .gitattributes
+|   .gitignore
+|   HELP.md
+|   mvnw
+|   mvnw.cmd
+|   pom.xml
+|   
++---.mvn
+|   \---wrapper
+|           maven-wrapper.properties
+|           
++---src
+|   +---main
+|   |   +---java
+|   |   |   \---kaiburr
+|   |   |       \---task1
+|   |   |           |   KaiburrTask1Application.java
+|   |   |           |   
+|   |   |           +---controller
+|   |   |           |       TaskController.java
+|   |   |           |       
+|   |   |           +---model
+|   |   |           |       Task.java
+|   |   |           |       TaskExecution.java
+|   |   |           |       
+|   |   |           +---repository
+|   |   |           |       TaskRepository.java
+|   |   |           |       
+|   |   |           \---service
+|   |   |                   TaskService.java
+|   |   |                   
+|   |   \---resources
+|   |       |   application.properties
+|   |       |   
+|   |       +---static
+|   |       \---templates
+|   \---test
+|       \---java
+|           \---kaiburr
+|               \---task1
+|                       KaiburrTask1ApplicationTests.java
+|                       
+\---target
+    |   task1-0.0.1-SNAPSHOT.jar
+    |   task1-0.0.1-SNAPSHOT.jar.original
+    |   
+    +---classes
+    |   |   application.properties
+    |   |   
+    |   \---kaiburr
+    |       \---task1
+    |           |   KaiburrTask1Application.class
+    |           |   
+    |           +---controller
+    |           |       TaskController.class
+    |           |       
+    |           +---model
+    |           |       Task.class
+    |           |       TaskExecution.class
+    |           |       
+    |           +---repository
+    |           |       TaskRepository.class
+    |           |       
+    |           \---service
+    |                   TaskService.class
+    |                   
+    +---generated-sources
+    |   \---annotations
+    +---generated-test-sources
+    |   \---test-annotations
+    +---maven-archiver
+    |       pom.properties
+    |       
+    +---maven-status
+    |   \---maven-compiler-plugin
+    |       +---compile
+    |       |   \---default-compile
+    |       |           createdFiles.lst
+    |       |           inputFiles.lst
+    |       |           
+    |       \---testCompile
+    |           \---default-testCompile
+    |                   createdFiles.lst
+    |                   inputFiles.lst
+    |                   
+    +---surefire-reports
+    |       kaiburr.task1.KaiburrTask1ApplicationTests.txt
+    |       TEST-kaiburr.task1.KaiburrTask1ApplicationTests.xml
+    |       
+    \---test-classes
+        \---kaiburr
+            \---task1
+                    KaiburrTask1ApplicationTests.class
+                    
