@@ -1,7 +1,41 @@
-# 🧩 Kaiburr Task Management API
+# Kaiburr Assessment 2025 — Task 1: Java Backend \& REST API
 
-This is a **Spring Boot + MongoDB** project that manages tasks with basic CRUD operations and command execution functionality.  
-It exposes RESTful endpoints that can be tested using `curl` or Postman.
+### 📘 Overview
+
+This project is part of the **Kaiburr Internship/Placement Assessment (2025)**.
+The objective is to build a Java backend with REST API to manage and execute shell command tasks.
+
+Your model should support the following operations:
+
+- Search, create, delete, and run task objects representing shell commands.
+
+| Label | Field |
+| :-- | :-- |
+| id | Task ID |
+| name | Task Name |
+| owner | Task Owner |
+| command | Shell Command |
+| taskExecutions | List of executions with start time, end time, output |
+
+---
+
+### 🧠 Problem Statement
+
+Build a Java REST API to:
+
+- Manage "task" records stored in MongoDB
+- Support CRUD and search
+- Run shell commands and store execution details
+
+**Example endpoints:**
+
+- GET `/tasks`
+- PUT `/tasks`
+- DELETE `/tasks/{id}`
+- GET `/tasks/search?name=string`
+- PUT `/tasks/{id}/execution`
+
+**Demonstrate API via Postman/curl and provide screenshots as evidence**.
 
 ---
 
