@@ -1,6 +1,6 @@
 package kaiburr.task1.controller;
-import kaiburr.task1.demo.model.Task;
-import kaiburr.task1.demo.service.TaskService;
+import kaiburr.task1.model.Task;
+import kaiburr.task1.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
