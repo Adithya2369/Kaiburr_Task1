@@ -33,7 +33,7 @@ Build a Java REST API to:
 - PUT `/tasks`
 - DELETE `/tasks/{id}`
 - GET `/tasks/search?name=string`
-- PUT `/tasks/{id}/execution`
+- PUT `/tasks/{id}/execute`
 
 **Demonstrate API via Postman/curl and provide screenshots as evidence**.
 
@@ -236,6 +236,69 @@ curl -X DELETE http://localhost:8080/tasks/1
 
 ---
 
+## 🧾 Screenshots and API Proof
+
+Below are the screenshots demonstrating the working REST API endpoints with date/time and name as required.
+
+---
+
+### 🟢 Application Running
+Spring Boot application running successfully on port 8080. \
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/Application_running.png" width="100%">
+
+---
+
+### 1. Add a Task
+Adding a new task using the PUT method. \
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/1_Add%20a%20task.png" width="60%">
+
+---
+
+### 2. Get All Tasks
+Fetching all tasks using GET /tasks. \
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/2_get%20tasks.png" width="60%">
+
+---
+
+### 2 (Alternate). Get Tasks (jq formatted)
+Formatted JSON output using:
+```bash
+curl http://localhost:8080/tasks | jq .
+```
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/2_get%20tasks_jp.png" width="100%">
+
+---
+
+### 3. Delete a Task
+Deleting a task using DELETE /tasks/{id}. \
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/3_delete%20a%20task.png" width="60%">
+
+---
+
+### 4. Get Task by Name
+Fetching a task using GET /tasks/search?name=<value>. \
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/4_get%20by%20name.png" width="60%">
+
+---
+
+### 5. Execute a Task
+Executing a stored shell command using PUT /tasks/{id}/execute. \
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/5_execute.png" width="60%">
+
+---
+
+### 5 (Proof). Execution Output Logged
+Shows the command output stored under taskExecutions in MongoDB. \
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/5_execute_proof.png" width="100%">
+
+---
+
+### ⚠️ Malicious Command Check
+Validation to prevent unsafe or malicious commands from being executed. \
+<img src="https://github.com/Adithya2369/Kaiburr_Task1/blob/5f6c7a7ac3dae7bc41228cf06c28807a0459c0fc/Images/malicious_exec.png" width="60%">
+
+---
+
 ## 🧰 Error Handling
 
 ### 1️⃣ Maven Build/Run Error
@@ -297,7 +360,7 @@ It’s completely fine to start it manually each time.
 
 ## 👨‍💻 Author
 **Adithya Reddy**  
-Kaiburr Assessment 2025 — Task 1:   Task Management API
+Kaiburr Assessment 2025 — Task 1:   Task Management API \
 **Topic:** Creating and Managinging a MongoDB databse using Rest API
 
 ---
